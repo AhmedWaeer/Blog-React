@@ -1,4 +1,5 @@
 const path = require('path');
+const cors = require('cors');
 const express = require('express');
 const session = require('express-session');
 const cookieParser = require("cookie-parser");
@@ -28,6 +29,7 @@ app.use(session({
     cookie: {
 
     },
+  
 
 }));
 app.use((req, res, next) => {
@@ -37,6 +39,10 @@ app.use((req, res, next) => {
     next();
 });
 const hbs = exphbs.create({ helpers });
+
+app.use(cors({
+    origin: '*'
+}));
 
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
