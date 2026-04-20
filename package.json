@@ -12,20 +12,20 @@
     "license": "ISC",
     "devDependencies": {
         "autoprefixer": "^10.2.6",
-        "nodemon": "^2.0.3"
+        "nodemon": "^2.0.22"
     },
     "dependencies": {
-        "bcrypt": "^4.0.1",
+        "bcrypt": "^5.0.0",
         "connect-ensure-login": "^0.1.1",
-        "connect-mongodb-session": "^2.4.1",
-        "cookie-parser": "^1.4.5",
+        "connect-mongodb-session": "^5.0.0",
+        "cookie-parser": "^1.4.7",
         "cors": "^2.8.5",
         "dotenv": "^8.2.0",
-        "express": "^4.17.1",
-        "express-handlebars": "^3.1.0",
-        "express-session": "^1.17.0",
-        "mongoose": "^5.12.14",
+        "express": "^4.22.0",
+        "express-handlebars": "^5.3.1",
+        "express-session": "^1.19.0",
+        "mongoose": "^6.13.6",
         "mongoose-deep-populate": "^3.2.0",
-        "morgan": "^1.9.1"
+        "morgan": "^1.10.1"
     }
 }
